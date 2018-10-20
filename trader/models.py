@@ -22,7 +22,8 @@ class Book(models.Model):
         """
         return self.title
 
-class Advertisement(models.model):
+
+class Advertisement(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField()
     # TODO location here
@@ -31,6 +32,7 @@ class Advertisement(models.model):
 
     def __str__(self):
         return self.title
+
 
 class Report(models.Model):
     """
