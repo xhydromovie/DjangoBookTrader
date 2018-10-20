@@ -49,3 +49,18 @@ class Report(models.Model):
         :return: reported advertisement name
         """
         return self.advertisement
+
+
+class Avatar(models.Model):
+    """
+    Model of avatar, contains avatar image and Foreign Key to user who have this avatar.
+    """
+    image = models.ImageField('avatar')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        """
+        Method returns username of avatar owner.
+        :return: username of avatar owner
+        """
+        return self.user.username
