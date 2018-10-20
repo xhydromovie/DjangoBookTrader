@@ -8,3 +8,6 @@ def register(request):
 
 def login(request):
     return render(request, 'accounts/login.html', {'form': Login_form()})
+
+def profile(request):
+    return render(request, 'accounts/profile.html', {})
