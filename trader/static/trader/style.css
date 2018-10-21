@@ -1,0 +1,14 @@
+.custom-navbar {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 10px 0px 15px grey;
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#booktrade {
+    color: rgb(0, 81, 255);
+    font-family: 'Pacifico';
+    font-size: 28px;
+}
