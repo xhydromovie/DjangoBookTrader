@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import Report_form
+from .forms import Report_form, AdvertisementCreat_form
 
 
 def index(request):
@@ -7,3 +7,6 @@ def index(request):
 
 def report(request, id):
     return render(request, 'report.html', {'form': Report_form()})
+
+def advertisement_creat(request):
+    return render(request, 'advertisement-create.html', {'form': AdvertisementCreat_form()})
