@@ -20,5 +20,5 @@ def advertisement(request, adv_id):
     return render(request, 'advertisement.html', {'advertisement': adv})
 
 
-def advertisement_creat(request):
+def advertisement_create(request):
     return render(request, 'advertisement-create.html', {'form': AdvertisementCreat_form()})
