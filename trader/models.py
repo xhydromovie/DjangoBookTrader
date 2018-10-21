@@ -24,6 +24,9 @@ class Book(models.Model):
 
 
 class Advertisement(models.Model):
+    """
+    Model of Advertisement, contains information like: advertisement tile, description, date of publication and date of expiration.
+    """
     title = models.CharField(max_length=50)
     description = models.TextField()
     # TODO location here
