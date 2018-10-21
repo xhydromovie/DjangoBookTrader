@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>{{ advertisement.title }}</h1>
+    <ul>
+        <li>{{ advertisement.creater }}</li>
+    <br>
+    <li>{{ advertisement.description }}</li>
+    <li>{{ advertisement.date_of_publication }}</li>
+        <li>{{ advertisement.date_of_expiration }}</li>
+    </ul>
+{% endblock %}

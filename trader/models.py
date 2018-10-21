@@ -29,6 +29,7 @@ class Advertisement(models.Model):
     """
     title = models.CharField(max_length=50)
     description = models.TextField()
+    creater = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
     # TODO location here
     date_of_publication = models.DateField()
     date_of_expiration = models.DateField()
